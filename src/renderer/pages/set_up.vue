@@ -7,7 +7,7 @@
         radiation information specific to your location.
       </h3>
     </div>
-    <div class="e-nuxt-zip">
+    <div class="e-nuxt-content">
       <v-text-field
         v-model="zip"
         label="Enter your zip code here:"
@@ -43,15 +43,4 @@ export default {
 </script>
 
 <style>
-.e-nuxt-zip {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 20px;
-  border-top: 1px solid #397c6d;
-  border-bottom: 1px solid #397c6d;
-}
 </style>

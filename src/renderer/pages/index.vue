@@ -3,8 +3,8 @@
     <div class="e-nuxt-content">
       <h1>Off Grid solar calculator</h1>
       <h3>
-        This calcutor will give you a baseline idea of the size solar system you
-        need to satisfy your energy consumption
+        This calculator will give you a baseline idea of the size solar system
+        you need to satisfy your energy consumption
       </h3>
     </div>
   </div>
@@ -42,7 +42,6 @@ export default {
   width: 400px;
   padding-top: 100px;
   padding: 20px;
-  border-top: 1px solid #397c6d;
   border-bottom: 1px solid #397c6d;
 }
 
