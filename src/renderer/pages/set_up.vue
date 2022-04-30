@@ -9,26 +9,27 @@
     </div>
     <div class="e-nuxt-content">
       <v-text-field
-        v-model="zip"
-        label="Enter your zip code here:"
+        v-model="zip_entry"
+        label="Enter yor zip code here:"
         contained
         counter
         maxlength="5"
         clearable
         :rules="[rules.counter]"
-        @keyup.enter="fetchzip(zip)"
+        @keyup.enter="fetchzip(zip_entry)"
       />
     </div>
   </div>
 </template>
 
 <script>
+import * as zipdata from "../assets/zipcode";
 export default {
   name: "SetupPage",
   components: {},
   data() {
     return {
-      zip: "",
+      zip_entry: "",
       externalContent: "",
       rules: {
         counter: (value) => value.length == 5 || "Provide a full 5 digit zip",
@@ -39,6 +40,10 @@ export default {
     fetchzip(zip) {
       console.log(zip);
     },
+  },
+  mounted() {
+    console.log("loading zip data");
+    console.log(zipdata);
   },
 };
 </script>

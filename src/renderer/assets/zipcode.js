@@ -1,4 +1,4 @@
-let zipcodes = [
+const zipcodes = [
   { zip: "00601", lat: "18.180555", long: "-66.749961" },
   { zip: "00602", lat: "18.361945", long: "-67.175597" },
   { zip: "00603", lat: "18.455183", long: "-67.119887" },
@@ -33144,3 +33144,4 @@ let zipcodes = [
   { zip: "99927", lat: "56.239062", long: "-133.457924" },
   { zip: "99929", lat: "56.370750", long: "-131.693301" },
 ];
+export default zipcodes;
