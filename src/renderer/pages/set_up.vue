@@ -16,6 +16,7 @@
         maxlength="5"
         clearable
         :rules="[rules.counter]"
+        @keyup.enter="fetchzip(zip)"
       />
     </div>
   </div>
@@ -35,8 +36,8 @@ export default {
     };
   },
   methods: {
-    openURL(url) {
-      window.open(url);
+    fetchzip(zip) {
+      console.log(zip);
     },
   },
 };
