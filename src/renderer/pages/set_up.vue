@@ -19,16 +19,20 @@
         @keyup.enter="fetchzip(zip_entry)"
       />
     </div>
+    <div>
+      {{ latlongdata }}
+    </div>
   </div>
 </template>
 
 <script>
-import * as zipdata from "../assets/zipcode";
+import zipcodes from "../assets/zipcode";
 export default {
   name: "SetupPage",
   components: {},
   data() {
     return {
+      latlongdata: "",
       zip_entry: "",
       externalContent: "",
       rules: {
@@ -38,12 +42,14 @@ export default {
   },
   methods: {
     fetchzip(zip) {
-      console.log(zip);
+      console.log("searching");
+      this.latlongdata = zipcodes.find((d) => d.zip == zip);
+      console.log("Done searching");
     },
   },
   mounted() {
     console.log("loading zip data");
-    console.log(zipdata);
+    console.log(zipcodes);
   },
 };
 </script>
